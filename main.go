@@ -30,7 +30,7 @@ func getBydId(w http.ResponseWriter, r *http.Request){
 func handleRequests() {
 	http.HandleFunc("/", getAll)
 	http.HandleFunc("/view/", getBydId)
-	log.Fatal(http.ListenAndServe(":10000", nil))
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
 func main() {
